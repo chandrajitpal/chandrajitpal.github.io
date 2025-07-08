@@ -13,7 +13,7 @@ His research interests mainly include computer vision and signal processing algo
 BRIEF DESCRIPTION:
 The CHERI project has created the infrastructure for hardware capabilities. The Morello project implements these concepts and tools for the Arm architecture. In terms of programming languages, the focus of CHERI and Morello has been primarily on C but considerable work has also been done on C++ and some more preliminary work on Rust. The Morello-HAT project (Morello High-Level API and Tooling) intends to create a common API that can be used by compiler developers as well as programmers of higher-level languages, to allow them to leverage Morello's HW capabilities to improve memory security and type safety, spatial as well as temporal, of their language and programs.
 
-2025 - Present: Contributing to an EPSRC project "IDEAL: Reducing Carbon Footprints of IoT Devices through Extension of Active Lifespans"
+2025 - Present: Contributing to an EPSRC project "IDEAL: Reducing Carbon Footprints of IoT Devices through Extension of Active Lifespans" in collaboration with the University of Glasgow and the University of Oxford.
 
 BRIEF DESCRIPTION: 
 The IDEAL project aims to drastically extend the active lifespan of Internet of Things (IoT) devices from years to decades. This initiative seeks to reduce the substantial carbon footprint associated with manufacturing ICT devices by enabling them to be repurposed and degrade gracefully through novel hardware design, software co-design, formal methods, and machine learning. The project also investigates circular economy business models to support this extended lifespan and addresses social and ethical implications of such a shift in the industry. 
