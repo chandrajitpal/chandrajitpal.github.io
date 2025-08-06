@@ -1,5 +1,7 @@
-Senior Research Officer
-School of Computer Science and Electronic Engineering (CSEE)
+Senior Research Officer <br>
+School of Computer Science and Electronic Engineering (CSEE)<be>
+Wivenhoe Park, University of Essex <br> Colchester, CO4 3SQ. 
+
 
 
 Biography
