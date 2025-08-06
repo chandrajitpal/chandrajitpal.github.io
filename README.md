@@ -19,6 +19,8 @@ BRIEF DESCRIPTION:
 The IDEAL project aims to drastically extend the active lifespan of Internet of Things (IoT) devices from years to decades. This initiative seeks to reduce the substantial carbon footprint associated with manufacturing ICT devices by enabling them to be repurposed and degrade gracefully through novel hardware design, software co-design, formal methods, and machine learning. The project also investigates circular economy business models to support this extended lifespan and addresses social and ethical implications of such a shift in the industry. 
 
 
+[**University Web page**](https://www.essex.ac.uk/people/PALCH71608/Chandrajit-Pal)
+
 
 1. [Google Scholar profile](https://scholar.google.com/citations?user=qYcI37gAAAAJ&hl=en)
 
