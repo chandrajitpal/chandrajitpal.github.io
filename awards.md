@@ -16,5 +16,6 @@
 Got attention in newspapers as shown below:<br>
     1. [The Hindu](https://www.thehindubusinessline.com/news/science/new-technique-may-help-deploy-neural-networks-on-portable-devices/article26051558.ece)<br>
     2. [DownToEarth](https://www.downtoearth.org.in/science-technology/neural-networks-on-portable-devices-could-be-a-reality-soon-62905)<br>
+    3. [Tech Explorist](https://www.techexplorist.com/new-technology-help-deploy-neural-networks-portable-devices/20292/)<br>
 
 
