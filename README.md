@@ -4,7 +4,7 @@ University of Essex <br> Wivenhoe Park, Colchester, CO4 3SQ.
 
 
 
-Biography
+### Biography
 
 
 Dr Pal is a Senior Research Officer at the School of Computer Science and Electronic Engineering, University of Essex. In addition, he is a member of the school's Embedded and Intelligent Systems (EIS) Research Group. Before that, he was a National Post-doctoral Fellow (SERB awarded, DST, Govt of India) at IIT Hyderabad, India.  He received a PhD in Information Technology from the University of Calcutta. He was awarded the prestigious Presidential DST INSPIRE Fellowship by the Govt of India in 2018 to carry out his doctoral studies. He also worked as a Newton Bhabha Fellow in the School of Electronics and Computer Science department at the University of Southampton, UK in 2016. 
