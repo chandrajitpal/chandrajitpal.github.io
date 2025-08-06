@@ -20,8 +20,6 @@ The IDEAL project aims to drastically extend the active lifespan of Internet of 
 
 
 
-Google Scholar profile:<br>
-https://scholar.google.com/citations?user=qYcI37gAAAAJ&hl=en
+1. [Google Scholar profile](https://scholar.google.com/citations?user=qYcI37gAAAAJ&hl=en)
 
-Guest editor:
-https://www.mdpi.com/journal/electronics/special_issues/S4E4V3XE31
+2. Guest editor: [MDPI Electronics](https://www.mdpi.com/journal/electronics/special_issues/S4E4V3XE31)
