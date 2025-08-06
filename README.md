@@ -2,6 +2,11 @@ Senior Research Officer <br>
 School of Computer Science and Electronic Engineering (CSEE)<br>
 University of Essex <br> Wivenhoe Park, Colchester, CO4 3SQ. 
 
+### Contact:
+email: <br>
+1. palchandrajit@gmail.com (personal)
+2. chandrajit.pal@essex.ac.uk (office)
+
 
 
 ### Biography
