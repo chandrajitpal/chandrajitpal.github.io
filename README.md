@@ -20,7 +20,7 @@ The IDEAL project aims to drastically extend the active lifespan of Internet of 
 
 
 
-Google Scholar profile:
+Google Scholar profile:\n
 https://scholar.google.com/citations?user=qYcI37gAAAAJ&hl=en
 
 Guest editor:
