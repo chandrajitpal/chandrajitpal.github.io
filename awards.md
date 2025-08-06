@@ -15,7 +15,6 @@
 ## Developed a novel technique that may help deploy neural networks on portable devices.  
 Got attention in newspapers as shown below:<br>
     1. [The Hindu](https://www.thehindubusinessline.com/news/science/new-technique-may-help-deploy-neural-networks-on-portable-devices/article26051558.ece)<br>
-
-    2. [DownToEarth](https://www.downtoearth.org.in/science-technology/neural-networks-on-portable-devices-could-be-a-reality-soon-62905)
+    2. [DownToEarth](https://www.downtoearth.org.in/science-technology/neural-networks-on-portable-devices-could-be-a-reality-soon-62905)<br>
 
 
