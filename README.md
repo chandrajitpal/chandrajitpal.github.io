@@ -33,3 +33,4 @@ The IDEAL project aims to drastically extend the active lifespan of Internet of 
 2. [LinkedIn](https://www.linkedin.com/in/chandrajit-pal-2715061b/)
 3. Guest editor: [MDPI Electronics](https://www.mdpi.com/journal/electronics/special_issues/S4E4V3XE31).
 4. [Awards and recognitions](https://github.com/chandrajitpal/chandrajitpal.github.io/blob/main/awards.md)
+5. [New](https://github.com/chandrajitpal/chandrajitpal.github.io/blob/main/Awards_Recognition.html)
