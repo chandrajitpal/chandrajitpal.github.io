@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching and Supervision</title>
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom list styling */
+        .custom-list li {
+            position: relative;
+            padding-left: 1.75rem; /* 28px */
+            margin-bottom: 0.5rem; /* 8px */
+        }
+        .custom-list li::before {
+            content: '\f105'; /* Font Awesome right arrow */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 0.125rem; /* 2px */
+            color: #3b82f6; /* blue-500 */
+        }
+        .nested-list {
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        .nested-list li::before {
+             content: '\f111'; /* Font Awesome circle */
+             font-size: 0.5rem; /* 8px */
+             top: 0.5rem; /* 8px */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl sm:text-2xl font-bold text-gray-900">Teaching & Supervision</h1>
+            <a href="https://chandrajitpal.github.io/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm sm:text-base">
+                <i class="fas fa-home mr-1 sm:mr-2"></i>Home
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <p class="text-lg text-gray-600 mb-10 text-center">Demonstrated managerial and teaching skills in both academic and industry settings.</p>
+        
+        <!-- Academic Guidance and Supervision Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-3 flex items-center">
+                <i class="fas fa-user-graduate text-2xl text-gray-700 mr-3"></i>
+                Academic Guidance and Supervision
+            </h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <ul class="custom-list text-gray-700">
+                    <li>Supervised 4 master's degree final-year major projects (IIT Hyderabad, India).</li>
+                    <li>Supervised 6 final-year undergraduate engineering projects and 3 PhD student (SMIT and IIT Hyderabad).</li>
+                    <li>Mentored and guided students on research topics, including algorithm design, hardware implementation, and research methodology.</li>
+                    <li>Presently Mentoring 2 PhD students and one master's student in the Computer Science and Electronics Engineering department, University of Essex, UK.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Industry Project Leadership Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-3 flex items-center">
+                <i class="fas fa-users-cog text-2xl text-gray-700 mr-3"></i>
+                Industry Project Leadership
+            </h2>
+             <div class="bg-white p-6 rounded-lg shadow">
+                <ul class="custom-list text-gray-700">
+                    <li>Led a DRDO (Defense Research Development Organization) project focused on designing a compressed version of VGGNET for object classification and tracking.</li>
+                    <li>Led a team of 5 engineers on a defence project (DRDO) on digital scene matching application for target tracking.</li>
+                    <li>Led teams at Ceremorphic Technologies on various AI/ML projects, including:
+                        <ul class="custom-list nested-list">
+                            <li>Optimizing algorithm design for computer vision applications (object detection/recognition, person recognition).</li>
+                            <li>Designing an efficient pipeline for distant person detection and recognition in 4K video using GPUs.</li>
+                            <li>Developing a novel deep neural design and pipeline architecture for person re-identification in high-resolution video.</li>
+                            <li>Creating a fragmented Huffman-based compression methodology for CNNs targeting resource-constrained edge devices.</li>
+                            <li>Developing a novel approach in WIFI-CSI based person fall detection.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Module Development & Teaching Section -->
+        <section>
+            <h2 class="text-3xl font-bold mb-6 border-b pb-3 flex items-center">
+                <i class="fas fa-chalkboard-teacher text-2xl text-gray-700 mr-3"></i>
+                Module Development & Teaching
+            </h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold mb-3">Module Development</h3>
+                <ul class="custom-list text-gray-700 mb-6">
+                    <li>Designed AI/ML basic, intermediate and advanced modules and provided training in faculty development programs as industry expert.</li>
+                    <li>Developed a Neural Network Accelerator Design module.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-3">Subjects Taught</h3>
+                <ul class="custom-list text-gray-700">
+                    <li>Embedded system (EC-602) along with lab (EC-609).</li>
+                    <li>Microelectronics and VLSI DESIGN(EC-703) and lab(EC-707).</li>
+                    <li>Computer communication.(EC-704)</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
