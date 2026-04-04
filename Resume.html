@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume - Dr. Chandrajit Pal</title>
 <style>
+  * {
+    box-sizing: border-box;
+  }
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f9;
@@ -124,6 +127,10 @@
   .news-links a:hover {
     text-decoration: underline;
   }
+  a {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
   .footer-block {
     display: flex;
     justify-content: space-between;
@@ -151,6 +158,50 @@
   .signature-details {
     font-size: 0.9em;
     color: #7f8c8d;
+  }
+
+  /* Tablet Responsive Design */
+  @media screen and (max-width: 992px) {
+    .resume-wrapper {
+      width: 100%;
+    }
+    .left-col {
+      width: 40%;
+    }
+    .right-col {
+      width: 60%;
+    }
+  }
+
+  /* Mobile Responsive Design */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+    .resume-wrapper {
+      flex-direction: column;
+    }
+    .left-col, .right-col {
+      width: 100%;
+      padding: 20px;
+    }
+    .footer-block {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+    .signature-block {
+      text-align: center;
+    }
+    .signature-img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .qr-code {
+      width: 100px;
+      height: 100px;
+    }
   }
 </style>
 </head>
