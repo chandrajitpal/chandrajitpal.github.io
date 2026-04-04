@@ -124,6 +124,34 @@
   .news-links a:hover {
     text-decoration: underline;
   }
+  .footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ecf0f1;
+  }
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .signature-block {
+    text-align: right;
+  }
+  .signature-img {
+    max-width: 180px;
+    max-height: 70px;
+    margin-bottom: 8px;
+  }
+  .signature-details {
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
 </style>
 </head>
 <body>
@@ -217,10 +245,10 @@
 
     <h2>External Collaborators</h2>
     <ul>
-      <li><strong>Prof. Wim Vanderbauwhede et al.</strong> – School of Computing Science, University of Glasgow, UK.</li>
-      <li><strong>Prof. Nobuko Yoshida et al.</strong> – Department of Computer Science, University of Oxford, UK.</li>
-      <li><strong>Dr. Kamalika Dutta, Lennart Weingarten and Team</strong> – Institute of Computer Science, University of Bremen, Germany.</li>
-      <li><strong>Prof. Amit Acharyya</strong> – Electrical Engineering Dept, IIT Hyderabad, India.</li>
+      <li><strong>Prof. Wim Vanderbauwhede, Prof. Jose Cano and team</strong> – School of Computing Science, University of Glasgow, UK.</li>
+      <li><strong>Prof. Nobuko Yoshida, Prof. Caitlin McElroy and team</strong> – Department of Computer Science, University of Oxford, UK.</li>
+      <li><strong>Dr. Kamalika Dutta, Lennart Weingarten and team</strong> – Institute of Computer Science, University of Bremen, Germany.</li>
+      <li><strong>Prof. Amit Acharyya, Dr. Pabitra Das</strong> – Electrical Engineering Dept, IIT Hyderabad, India.</li>
       <li><strong>Prof. Xiaoqing Wen</strong> – Department of Computer Science and Networks, Kyushu Institute of Technology, Japan.</li>
       <li><strong>Dr. Dwaipayan Biswas</strong> – Program Director, IMEC Belgium.</li>
       <li><strong>Dr. Pradip Sasmal</strong> – IIT Jodhpur, India.</li>
@@ -304,6 +332,8 @@
       <li style="margin-bottom: 8px;"><strong>Pal, C.</strong>, Verma, P., Rohit, H., Gyaneshwar, D., Channappayya, S. S., & Acharyya, A. "SqueezeNetVLAD: High-speed power and memory efficient GPS less accurate network model for visual place recognition on the edge," 2023 21st IEEE Interregional NEWCAS Conference (NEWCAS), 2023, pp. 1-5. <a href="https://ieeexplore.ieee.org/document/10198114/" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">[Link]</a></li>
       <li style="margin-bottom: 8px;">Borowski M, <strong>Pal C</strong>, Saha S, Poli L, Zhai X, McDonald-Maier KD. "Anomaly Behaviour tracing of CHERI-RISC V using Hardware-Software Co-design," 2023 21st IEEE Interregional NEWCAS Conference (NEWCAS), 2023, pp. 1-5. <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Anomaly%20Behaviour%20tracing%20of%20CHERI-RISC%20V" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">[Link]</a></li>
       <li style="margin-bottom: 8px;">Vinay R, Sasmal P, <strong>Pal C</strong>, Haraki T, Tamura K, Juyal C, Elbakri MA, Channappayya S, Acharyya A. Light weight rl based run time power management methodology for edge devices. In 2022 29th IEEE International Conference on Electronics, Circuits and Systems (ICECS) 2022 Oct 24 (pp. 1-4). IEEE. <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Light%20weight%20rl%20based%20run%20time%20power%20management%20methodology%20for%20edge%20devices" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">[Link]</a></li>
+      <li style="margin-bottom: 8px;"><strong>Pal C</strong>, Pankaj S, Akram W, Acharyya A, Biswas D. Modified Huffman based compression methodology for deep neural network implementation on resource constrained mobile platforms. In 2018 IEEE International Symposium on Circuits and Systems (ISCAS) 2018 May 27 (pp. 1-5). IEEE. <a href="https://ieeexplore.ieee.org/abstract/document/8351234" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">[Link]</a></li>
+      <li style="margin-bottom: 8px;"><strong>Pal C</strong>, Biswas D, Maharatna K, Chakrabarti A. Architecture for complex network measures of brain connectivity. In 2017 IEEE International Symposium on Circuits and Systems (ISCAS) 2017 May 28 (pp. 1-4). IEEE. <a href="https://ieeexplore.ieee.org/abstract/document/8050239" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">[Link]</a></li>
     </ol>
 
     <h2>Module Development & Teaching</h2>
@@ -318,12 +348,25 @@
       </li>
     </ul>
 
-    <h2>Academic Guidance & Supervision</h2>
+    <h2>Academic Supervision & Grant Writing</h2>
     <ul>
       <li>Supervised 4 master's degree final-year major projects (IIT Hyderabad, India).</li>
-      <li>Supervised 6 final-year undergraduate engineering projects and 2 PhD students (SMIT and IIT Hyderabad).</li>
+      <li>Supervised 6 final-year undergraduate engineering projects and 2 PhD students (SMIT and IIT Hyderabad, India).</li>
       <li>Presently mentoring 2 PhD students, 2 master’s students, and 1 undergrad in the Computer Science and Electronic Engineering department, University of Essex, UK.</li>
+      <li>Experienced in writing multiple research grants to assist my professors (supervisors) at IIT Hyderabad, India (focusing on defense projects) and the University of Essex, UK (focusing on IoT security and biomedical research).</li>
     </ul>
+
+    <div class="footer-block">
+      <div class="profile-pic">
+        <img src="https://chandrajitpal.github.io/images/sanucp.jpg" alt="Dr. Chandrajit Pal">
+      </div>
+      <div class="signature-block">
+        <img src="sig_withoutbackground.png" alt="Digital Signature" class="signature-img" style="max-width: 150px; max-height: 60px; display: block; margin-left: auto; margin-bottom: 5px;">
+        <div class="signature-details">
+          <strong>Dr. Chandrajit Pal</strong>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
