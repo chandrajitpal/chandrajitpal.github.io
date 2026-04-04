@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport-meta">
 <title>Resume - Dr. Chandrajit Pal</title>
 <style>
   * {
@@ -15,6 +15,50 @@
     padding: 20px;
     color: #333;
   }
+  
+  /* View Controls (Hidden when printing) */
+  .view-controls {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .view-controls span {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50;
+  }
+  .view-btn {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .view-btn:hover {
+    background: #bdc3c7;
+  }
+  .view-btn.active {
+    background: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+  }
+  @media print {
+    .view-controls { display: none; }
+  }
+
+  /* Main Layout */
   .resume-wrapper {
     display: flex;
     max-width: 950px;
@@ -160,52 +204,117 @@
     color: #7f8c8d;
   }
 
-  /* Tablet Responsive Design */
+  /* Auto Tablet Responsive Design */
   @media screen and (max-width: 992px) {
-    .resume-wrapper {
+    body:not(.force-desktop) .resume-wrapper {
       width: 100%;
     }
-    .left-col {
+    body:not(.force-desktop) .left-col {
       width: 40%;
     }
-    .right-col {
+    body:not(.force-desktop) .right-col {
       width: 60%;
     }
   }
 
-  /* Mobile Responsive Design */
+  /* Auto Mobile Responsive Design */
   @media screen and (max-width: 768px) {
-    body {
+    body:not(.force-desktop) {
       padding: 10px;
     }
-    .resume-wrapper {
+    body:not(.force-desktop) .resume-wrapper {
       flex-direction: column;
     }
-    .left-col, .right-col {
+    body:not(.force-desktop) .left-col, body:not(.force-desktop) .right-col {
       width: 100%;
       padding: 20px;
     }
-    .footer-block {
+    body:not(.force-desktop) .footer-block {
       flex-direction: column;
       align-items: center;
       gap: 20px;
       text-align: center;
     }
-    .signature-block {
+    body:not(.force-desktop) .signature-block {
       text-align: center;
     }
-    .signature-img {
+    body:not(.force-desktop) .signature-img {
       margin-left: auto;
       margin-right: auto;
     }
-    .qr-code {
+    body:not(.force-desktop) .qr-code {
       width: 100px;
       height: 100px;
     }
   }
+
+  /* Forced Desktop View Override */
+  body.force-desktop .resume-wrapper {
+    flex-direction: row !important;
+    width: 950px !important;
+    max-width: 950px !important;
+  }
+  body.force-desktop .left-col {
+    width: 34% !important;
+    padding: 30px !important;
+  }
+  body.force-desktop .right-col {
+    width: 66% !important;
+    padding: 30px !important;
+  }
+  body.force-desktop .footer-block {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+  body.force-desktop .signature-block {
+    text-align: right !important;
+  }
+
+  /* Forced Mobile View Override */
+  body.force-mobile .resume-wrapper {
+    flex-direction: column !important;
+    max-width: 768px !important;
+  }
+  body.force-mobile .left-col, body.force-mobile .right-col {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+  body.force-mobile .footer-block {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: center !important;
+  }
+  body.force-mobile .signature-block {
+    text-align: center !important;
+  }
+  body.force-mobile .signature-img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  body.force-mobile .qr-code {
+    width: 100px !important;
+    height: 100px !important;
+  }
 </style>
 </head>
 <body>
+
+<!-- Controls for switching views -->
+<div class="view-controls">
+  <span>Select View: </span>
+  <button class="view-btn active" id="btn-auto" onclick="setViewMode('auto')" title="Auto (Responsive)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5.33V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3"/><rect x="14" y="10" width="8" height="12" rx="2" ry="2"/></svg>
+  </button>
+  <button class="view-btn" id="btn-desktop" onclick="setViewMode('desktop')" title="Desktop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+  </button>
+  <button class="view-btn" id="btn-mobile" onclick="setViewMode('mobile')" title="Mobile">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+  </button>
+</div>
 
 <div class="resume-wrapper">
   <div class="left-col">
@@ -421,6 +530,34 @@
 
   </div>
 </div>
+
+<script>
+  function setViewMode(mode) {
+    const body = document.body;
+    const viewportMeta = document.getElementById('viewport-meta');
+    const btns = document.querySelectorAll('.view-btn');
+    
+    // Update active button styling
+    btns.forEach(btn => btn.classList.remove('active'));
+    document.getElementById('btn-' + mode).classList.add('active');
+
+    // Apply the chosen layout mode
+    if (mode === 'desktop') {
+      body.classList.remove('force-mobile');
+      body.classList.add('force-desktop');
+      // Force viewport width for true desktop scaling on phones
+      viewportMeta.setAttribute('content', 'width=1000');
+    } else if (mode === 'mobile') {
+      body.classList.remove('force-desktop');
+      body.classList.add('force-mobile');
+      viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    } else {
+      // Auto mode
+      body.classList.remove('force-desktop', 'force-mobile');
+      viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+  }
+</script>
 
 </body>
 </html>
