@@ -54,8 +54,22 @@
     color: #fff;
     border-color: #2980b9;
   }
+
+  /* Print Settings to Fix PDF Links */
   @media print {
     .view-controls { display: none; }
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .resume-wrapper {
+      box-shadow: none !important;
+      overflow: visible !important; /* This fixes clickable links in many PDF makers */
+    }
+    a {
+      color: #3498db !important;
+      text-decoration: underline !important;
+    }
   }
 
   /* Main Layout */
