@@ -22,34 +22,51 @@
     overflow: hidden;
   }
   .left-col {
-    width: 32%;
+    width: 34%;
     background: #2c3e50;
     color: #ecf0f1;
     padding: 30px;
   }
   .right-col {
-    width: 68%;
+    width: 66%;
     padding: 30px;
+  }
+  .qr-code {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
   }
   h1 {
     margin-top: 0;
-    font-size: 2.2em;
+    font-size: 1.7em;
     color: #fff;
     line-height: 1.2;
     margin-bottom: 5px;
+    white-space: nowrap;
   }
   .subtitle {
     font-size: 1.1em;
     color: #3498db;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-weight: bold;
+    display: block;
+  }
+  .institute-header {
+    font-size: 0.85em;
+    color: #bdc3c7;
+    margin-bottom: 25px;
+    line-height: 1.5;
   }
   h2 {
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
     margin-top: 25px;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .left-col h2 {
     color: #fff;
@@ -58,25 +75,26 @@
   p {
     line-height: 1.5;
     margin-bottom: 10px;
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
   ul {
-    padding-left: 20px;
+    padding-left: 18px;
     margin-bottom: 15px;
   }
   li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     line-height: 1.4;
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
   .job-title {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.05em;
     color: #2980b9;
   }
   .company {
     font-weight: bold;
     color: #333;
+    font-size: 0.95em;
   }
   .date {
     font-style: italic;
@@ -88,18 +106,23 @@
   .left-col .date {
     color: #bdc3c7;
   }
-  .qr-code {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 130px;
-    height: 130px;
-    background: #fff;
-    padding: 8px;
-    border-radius: 8px;
-  }
   .contact-info p {
-    margin: 5px 0;
+    margin: 4px 0;
+    font-size: 0.85em;
+  }
+  .news-links {
+    margin-top: 8px;
     font-size: 0.9em;
+  }
+  .news-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .news-links a:hover {
+    text-decoration: underline;
   }
 </style>
 </head>
@@ -108,9 +131,16 @@
 <div class="resume-wrapper">
   <!-- LEFT COLUMN -->
   <div class="left-col">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://chandrajitpal.github.io/" alt="QR Code to Website" class="qr-code" onerror="this.style.display='none'">
+    <!-- QR Code to your personal site -->
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://chandrajitpal.github.io/" alt="QR Code" class="qr-code">
+    
     <h1>Dr. Chandrajit Pal</h1>
-    <div class="subtitle">Senior Research Officer</div>
+    
+    <span class="subtitle">Senior Research Officer</span>
+    <div class="institute-header">
+      School of Computer Science and Electronic Engineering (CSEE), University of Essex<br><br>
+      Wivenhoe Park, Colchester, CO4 3SQ, United Kingdom.
+    </div>
 
     <h2>Contact</h2>
     <div class="contact-info">
@@ -118,45 +148,48 @@
       <p>📧 chandrajit.pal@essex.ac.uk</p>
       <p>📱 +44 7587715241 (UK)</p>
       <p>📱 09433943797 (India)</p>
-      <p>📍 University of Essex, UK</p>
-      <p>🔗 chandrajitpal.github.io</p>
+      <p>🔗 <a href="https://chandrajitpal.github.io/" style="color: #ecf0f1; text-decoration: none;">chandrajitpal.github.io</a></p>
     </div>
 
     <h2>Education</h2>
     <p><strong>Ph.D. (Tech)</strong><br>
     University of Calcutta, India<br>
-    <span class="date">2012 - 2017</span></p>
+    <span class="date">2012 - 2018</span></p>
 
-    <p><strong>M.Tech., Information Technology</strong><br>
+    <p><strong>M.Tech., IT</strong><br>
     University of Calcutta, India<br>
-    <em>Gold Medalist (University Topper)</em><br>
+    <em>Gold Medalist (Univ. Topper)</em><br>
     <span class="date">2008 - 2010</span></p>
 
-    <p><strong>B.Tech., Information Technology</strong><br>
-    West Bengal Univ. of Technology, India<br>
+    <p><strong>B.Tech., IT</strong><br>
+    West Bengal Univ. of Tech, India<br>
     <span class="date">2004 - 2008</span></p>
-
-    <h2>Core Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> C, Java, Python, HTML</li>
-      <li><strong>AI & Software Tools:</strong> TensorFlow, Keras, MATLAB, Linux</li>
-      <li><strong>Hardware Design:</strong> VHDL, Verilog, Xilinx-AMD VIVADO</li>
-      <li><strong>Expertise:</strong> Artificial Intelligence, Smart Device Development, Image & Video Processing</li>
-    </ul>
 
     <h2>Awards & Honors</h2>
     <ul>
-      <li>Best Paper Award, IEEE COINS, Kings College London (2024)</li>
-      <li>AMD Best Project Award for smart phone software design (2018)</li>
-      <li>National Post-Doctoral Fellowship, Govt of India (2017)</li>
-      <li>Newton Bhabha PhD placement award, UK (2015)</li>
+      <li><strong>2024:</strong> Best Paper Award, IEEE COINS, Kings College London</li>
+      <li><strong>2018:</strong> AMD Best Project award (IIT Hyderabad, India)</li>
+      <li><strong>2017:</strong> ISCAS 2017 conference studentship award (Baltimore, MD, USA)</li>
+      <li><strong>2017:</strong> National Post-Doctoral Fellow at IITH (DST, SERB, Govt of India)</li>
+      <li><strong>2015–2016:</strong> University of Southampton, England, Newton Bhabha Fellow</li>
+      <li><strong>2012:</strong> VDAT fellowship award</li>
+      <li><strong>2011:</strong> DST Inspire Fellow Presidential Award (SERB, DST, Govt of India)</li>
+    </ul>
+
+    <h2>Core Skills</h2>
+    <ul>
+      <li>AI & Machine Learning</li>
+      <li>VHDL, Verilog (RTL)</li>
+      <li>TensorFlow, PyTorch, Keras, Python</li>
+      <li>VIVADO, MATLAB</li>
+      <li>Embedded & IoT Systems</li>
     </ul>
   </div>
 
   <!-- RIGHT COLUMN -->
   <div class="right-col">
     <h2>Professional Profile</h2>
-    <p>Experienced technology researcher and engineer with a strong background bridging academia and the semiconductor industry. Proven ability to lead technical teams, secure government funding, and design highly efficient smart computing systems for healthcare, security, and mobile devices.</p>
+    <p>Accomplished Senior Research Officer and AI Engineer with extensive experience across top-tier academic institutions and the semiconductor industry. Specialist in hardware-software co-design, resource-constrained AI optimization, and building resilient systems.</p>
 
     <h2>Work Experience</h2>
     
@@ -165,34 +198,43 @@
       <div class="company">University of Essex, UK</div>
       <span class="date">August 2023 - Present</span>
       <ul>
-        <li>Working on a major project to drastically extend the lifespan of smart internet devices, helping to reduce electronic waste and carbon footprints.</li>
-        <li>Mentoring PhD and Master's degree students in computing and engineering.</li>
+        <li><strong>IDEAL Project:</strong> An EPSRC (UKRI) funded project researching hardware-software co-design methods to extend the active lifespan of IoT devices, in collaboration with the University of Glasgow and the University of Oxford.</li>
+        <li><strong>Morello-HAT Project:</strong> An EPSRC (UKRI) funded project leveraging CHERI-based hardware capabilities to improve memory security and type safety, in collaboration with the University of Glasgow and the University of Oxford.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Senior Research Associate</div>
+      <div class="company">IIT Hyderabad, India</div>
+      <span class="date">May 2022 - August 2023</span>
+      <ul>
+        <li>Led defense-related projects focusing on digital scene matching area correlation (DSMAC) and reconfigurable ML accelerators.</li>
+        <li>Developed adaptive approximate computing systems for high-performance biomedical devices.</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="job-title">Senior Engineer II & AI Research Engineer</div>
-      <div class="company">Ceremorphic Technologies & Redpine Signals</div>
+      <div class="company">Ceremorphic Technologies (formerly Redpine Signals)</div>
       <span class="date">August 2019 - April 2022</span>
       <ul>
-        <li>Designed highly efficient computer vision software to track and recognize people in 4K video using powerful graphics processors (GPUs).</li>
-        <li>Created a new method to detect when a person falls using standard Wi-Fi signals.</li>
-        <li>Led AI project teams to make advanced smart software run smoothly on small, low-power devices.</li>
+        <li>Optimized 4K video pipelines for distant person detection and Re-Identification using high-performance GPUs.</li>
+        <li>Developed custom transformer-based graph neural networks and WiFi-CSI based fall detection systems.</li>
       </ul>
     </div>
 
-    <h2>Industry Projects</h2>
-    <ul>
-      <li>Optimised algorithm design of computer vision applications (object detection/recognition, person recognition) and porting the standard library primitives to TSMC 5nm process library.</li>
-      <li>Designing an efficient pipeline for distant person detection following recognition in 4K video using GPUs.</li>
-      <li>A novel deep neural design and efficient Pipeline architecture for Person Re-Identification in high resolution Video.</li>
-    </ul>
-
     <h2>Key Achievements & Patents</h2>
     <ul>
-      <li><strong>Patents:</strong> Granted 2 major patents (US and India) for smart video analysis and network systems, with 5 additional patents currently filed.</li>
-      <li><strong>Research Grants:</strong> Successfully completed a 1.9 Million INR funded project for designing computing systems for medical devices (Govt of India).</li>
-      <li><strong>Publications:</strong> Authored numerous articles in top-tier journals (like IEEE), published 3 book chapters on healthcare technology, and presented research at over 20 international conferences.</li>
+      <li><strong>Patents:</strong> 2 Granted (US and India); 3 currently filed and published. And 2 filed status with Suzuki Motocorp.</li>
+      <li><strong>Media Recognition:</strong> Research on neural network deployment for portable devices featured in global news outlets.
+        <div class="news-links">
+          <a href="https://www.thehindubusinessline.com/news/science/new-technique-may-help-deploy-neural-networks-on-portable-devices/article26051558.ece" target="_blank">🔗 The Hindu Business Line</a><br>
+          <a href="https://www.downtoearth.org.in/science-technology/neural-networks-on-portable-devices-could-be-a-reality-soon-62905" target="_blank">🔗 Down To Earth</a><br>
+          <a href="https://www.techexplorist.com/new-technology-help-deploy-neural-networks-portable-devices/20292/" target="_blank">🔗 Tech Explorist</a>
+        </div>
+      </li>
+      <li><strong>Grants:</strong> Principal Investigator for a 1.9M INR grant for biomedical system design.</li>
+      <li><strong>Publications:</strong> Published extensively in high-impact IEEE Transactions like TSUSC, TCE, TETCI, TAI, IoT, Elsevier BSPC, CMPB and Springer Nature journals.</li>
     </ul>
 
   </div>
