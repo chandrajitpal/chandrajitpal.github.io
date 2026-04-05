@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport-meta">
+<meta name="viewport" content="width=1000">
 <title>Resume - Dr. Chandrajit Pal</title>
 <style>
   * {
@@ -35,7 +35,7 @@
   /* Main Layout */
   .resume-wrapper {
     display: flex;
-    max-width: 950px;
+    width: 950px;
     margin: 0 auto;
     background: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -176,50 +176,6 @@
   .signature-details {
     font-size: 0.9em;
     color: #7f8c8d;
-  }
-
-  /* Auto Tablet Responsive Design */
-  @media screen and (max-width: 992px) {
-    .resume-wrapper {
-      width: 100%;
-    }
-    .left-col {
-      width: 40%;
-    }
-    .right-col {
-      width: 60%;
-    }
-  }
-
-  /* Auto Mobile Responsive Design */
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 10px;
-    }
-    .resume-wrapper {
-      flex-direction: column;
-    }
-    .left-col, .right-col {
-      width: 100%;
-      padding: 20px;
-    }
-    .footer-block {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      text-align: center;
-    }
-    .signature-block {
-      text-align: center;
-    }
-    .signature-img {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .qr-code {
-      width: 100px;
-      height: 100px;
-    }
   }
 </style>
 </head>
