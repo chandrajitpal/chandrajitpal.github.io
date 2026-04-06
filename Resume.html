@@ -16,7 +16,7 @@
     color: #333;
   }
   
-  /* Print Settings to Fix PDF Links */
+  /* Print Settings to Fix PDF Links (Firefox Compatible) */
   @media print {
     body {
       -webkit-print-color-adjust: exact !important;
@@ -26,19 +26,25 @@
     }
     .resume-wrapper {
       box-shadow: none !important;
-      overflow: visible !important; /* This fixes clickable links in many PDF makers */
-      display: table !important; /* Fixes browser bug that breaks links in flexbox */
+      overflow: visible !important; 
+      display: block !important; /* Using standard block instead of table/flex */
       width: 100% !important;
     }
     .left-col {
-      display: table-cell !important;
+      display: block !important;
+      float: left !important;
       width: 34% !important;
-      vertical-align: top !important;
     }
     .right-col {
-      display: table-cell !important;
+      display: block !important;
+      float: right !important;
       width: 66% !important;
-      vertical-align: top !important;
+    }
+    /* Clear floats to keep layout intact */
+    .resume-wrapper::after {
+      content: "";
+      display: table;
+      clear: both;
     }
     a {
       color: #3498db !important;
