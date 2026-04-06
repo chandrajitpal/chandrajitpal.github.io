@@ -21,14 +21,29 @@
     body {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
+      padding: 0 !important;
+      margin: 0 !important;
     }
     .resume-wrapper {
       box-shadow: none !important;
       overflow: visible !important; /* This fixes clickable links in many PDF makers */
+      display: table !important; /* Fixes browser bug that breaks links in flexbox */
+      width: 100% !important;
+    }
+    .left-col {
+      display: table-cell !important;
+      width: 34% !important;
+      vertical-align: top !important;
+    }
+    .right-col {
+      display: table-cell !important;
+      width: 66% !important;
+      vertical-align: top !important;
     }
     a {
       color: #3498db !important;
       text-decoration: underline !important;
+      display: inline !important;
     }
   }
 
