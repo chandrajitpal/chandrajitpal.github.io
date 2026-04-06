@@ -16,40 +16,46 @@
     color: #333;
   }
   
-  /* Print Settings to Fix PDF Links (Firefox Compatible) */
+  /* Print Settings to Fix PDF Links (Chrome & Firefox Compatible) */
   @media print {
+    @page {
+      margin: 0.5cm;
+    }
     body {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
       padding: 0 !important;
       margin: 0 !important;
+      background: #fff !important;
     }
     .resume-wrapper {
       box-shadow: none !important;
       overflow: visible !important; 
-      display: block !important; /* Using standard block instead of table/flex */
+      display: flex !important; /* Flex is fully supported in modern Chrome print */
       width: 100% !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
     }
     .left-col {
       display: block !important;
-      float: left !important;
+      float: none !important;
       width: 34% !important;
+      border-radius: 0 !important;
     }
     .right-col {
       display: block !important;
-      float: right !important;
+      float: none !important;
       width: 66% !important;
+      border-radius: 0 !important;
     }
-    /* Clear floats to keep layout intact */
     .resume-wrapper::after {
-      content: "";
-      display: table;
-      clear: both;
+      display: none;
     }
     a {
       color: #3498db !important;
       text-decoration: underline !important;
-      display: inline !important;
+      position: relative !important;
+      z-index: 9999 !important; /* Chrome fix: Forces links to stay clickable over backgrounds */
     }
   }
 
@@ -61,17 +67,21 @@
     background: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     border-radius: 8px;
-    overflow: hidden;
+    /* Removed "overflow: hidden" to ensure Chrome does not break PDF links */
   }
   .left-col {
     width: 34%;
     background: #2c3e50;
     color: #ecf0f1;
     padding: 30px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
   .right-col {
     width: 66%;
     padding: 30px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
   .qr-code {
     display: block;
@@ -169,6 +179,8 @@
   a {
     overflow-wrap: break-word;
     word-break: break-word;
+    position: relative;
+    z-index: 99;
   }
   .footer-block {
     display: flex;
